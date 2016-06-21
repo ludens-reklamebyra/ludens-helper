@@ -20,9 +20,19 @@ class Ludenshelper {
       throw new Error('Expected toggleType to be a string, and to match a jquery event method')
     }
 
-    this.selector.on(opts.event, function(e) {
-      $(opts.menuElement)[opts.toggleType](opts.speed)
-    })
+    if (opts.toggleType == 'slideToggle' || opts.toggleType == 'toggle') {
+
+      this.selector.on(opts.event, function(e) {
+        $(opts.menuElement)[opts.toggleType](opts.speed)
+      })
+
+    } else {
+      throw new Error(`
+        Only toggle-methods available
+        in the jQuery API is 'slideToggle()'
+        and 'toggle(). Please choose either one'
+      `)
+    }
     return this
   }
 }
