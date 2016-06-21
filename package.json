@@ -1,0 +1,36 @@
+{
+  "name": "ludens-helper",
+  "version": "1.0.0",
+  "description": "An API for helper methods",
+  "main": "./src/ludenshelper.js",
+  "scripts": {
+    "prebuild": "rm -rf ./lib && mkdir lib",
+    "build": "babel src/ludenshelper.js -o lib/ludenshelper.build.js",
+    "test": "mocha tests/ludenshelper.test.js --compilers js:babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludens-reklamebyra/ludens-helper.git"
+  },
+  "keywords": [
+    "ES6",
+    "ES2015",
+    "Ludens",
+    "Helpers"
+  ],
+  "author": "Øyvind Hermansen <oyvindher@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ludens-reklamebyra/ludens-helper/issues"
+  },
+  "homepage": "https://github.com/ludens-reklamebyra/ludens-helper#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
