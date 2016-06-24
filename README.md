@@ -5,6 +5,10 @@
 $ git clone https://github.com/ludens-reklamebyra/ludens-helper.git
 $ npm install
 ```
+## Running locally for development
+```
+$ npm run dev
+```
 ## Build
 ```
 $ npm run build
@@ -13,8 +17,3 @@ $ npm run build
 Uses mocha with Chai to test with.
 ```
 $ npm test
-```
-## API-reference
-``` javascript
-// Coming soon
-```
