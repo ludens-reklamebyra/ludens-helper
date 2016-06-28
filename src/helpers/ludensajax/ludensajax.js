@@ -1,8 +1,8 @@
 'use strict'
 import $ from 'jquery'
 
-/*
-* @param opts - an object with the config options
+/**
+* @param {object} opts - an object with the config options
 * @return object of xmlHttpRequest
 */
 const ludensAjax = (opts) => {
