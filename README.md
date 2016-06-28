@@ -17,3 +17,7 @@ $ npm run build
 Uses mocha with Chai to test with.
 ```
 $ npm test
+```
+# API
+
+[ludensAjax](./helpers/ludensajax/ludensajax.md)
