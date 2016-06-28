@@ -25,7 +25,7 @@ const ludensAjax = (opts) => {
     errorMsg: null,
   }, opts)
 
-  const setup = {}
+  const setup = {} || null
 
   setup.type = opts.method
   setup.url = opts.url
