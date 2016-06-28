@@ -2,8 +2,8 @@
 import $ from 'jquery'
 
 /**
-* @param opts - an object with the config options
-* @return object of the xmlHttpRequest
+* @param {object} opts - an object with the config options
+* @return {object} object of the xmlHttpRequest
 */
 const ludensAjax = (opts) => {
   if (!opts) {
