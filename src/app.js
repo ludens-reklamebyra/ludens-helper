@@ -1,4 +1,4 @@
-import ludensAjax from './helpers/loadmore/ludensajax' // example
+import ludensAjax from './helpers/ludensajax/ludensajax' // example
 
 // use this file to import functions and test them within the browser
 // with index.html file included in the root of this repo.
@@ -6,7 +6,7 @@ import ludensAjax from './helpers/loadmore/ludensajax' // example
 ludensAjax({
   method: 'get',
   url: 'http://www.ludensreklame.no/wp-json/wp/v2/posts',
-  data: {id: 1},
+  dataType: 'json',
   outputTarget: 'body',
   loading: {
     selector: 'body',
@@ -14,6 +14,6 @@ ludensAjax({
   },
   errorMsg: 'Something went wrong',
   cb: () => {
-    console.log('done')
+    console.log('cb is done')
   }
 })

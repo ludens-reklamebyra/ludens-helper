@@ -1,9 +1,9 @@
 'use strict'
 import $ from 'jquery'
 
-/**
-* @param {object} opts - an object with the config options
-* @return object of xmlHttpRequest
+/*
+* @param opts - an object with the config options
+* @return object of the xmlHttpRequest
 */
 const ludensAjax = (opts) => {
   if (!opts) {
@@ -38,6 +38,7 @@ const ludensAjax = (opts) => {
   }
 
   setup.success = (data) => {
+    if (!data) throw new Error('There is no data to collect')
     $(opts.outputTarget).append(data)
   }
 
