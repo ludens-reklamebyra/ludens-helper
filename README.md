@@ -20,4 +20,4 @@ $ npm test
 ```
 # API
 
-[ludensAjax](./helpers/ludensajax/ludensajax.md)
+[ludensAjax](./src/helpers/ludensajax/ludensajax.md)
