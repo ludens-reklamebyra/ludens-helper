@@ -10,15 +10,19 @@ example:
 ludensAjax({
   method: 'get',
   url: 'http://www.ludensreklame.no/wp-json/wp/v2/posts',
-  data: {id: 1, name: 'øyvind'},
+  dataType: 'JSON',
   outputTarget: 'body',
+  data: {query: 'something'}
   loading: {
     selector: 'body',
-    loadingText: 'data is loading'
+    loadingText: 'loading'
   },
-  errorMsg: 'Something happened when loading data',
+  errorMsg: 'Something went wrong',
   cb: () => {
-    console.log('done')
+    console.log('cb is done')
+  },
+  jsonResult: (result) => {
+    console.log(result) // JSON result
   }
 })
 ```

@@ -6,7 +6,7 @@ import ludensAjax from './helpers/ludensajax/ludensajax' // example
 ludensAjax({
   method: 'get',
   url: 'http://www.ludensreklame.no/wp-json/wp/v2/posts',
-  dataType: 'json',
+  dataType: 'JSON',
   outputTarget: 'body',
   loading: {
     selector: 'body',
@@ -15,5 +15,8 @@ ludensAjax({
   errorMsg: 'Something went wrong',
   cb: () => {
     console.log('cb is done')
+  },
+  jsonResult: (result) => {
+    console.log(result) // JSON result
   }
 })
